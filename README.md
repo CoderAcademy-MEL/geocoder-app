@@ -103,7 +103,7 @@ There are a a few things we need to setup.
     # => <Venue id: 1, name: "Coder Academy", address: "120 Spencer Street, Melbourne", created_at: "2020-05-13 01:11:43", updated_at: "2020-05-13 01:11:43", longitude: 144.9543325, latitude: -37.8182119>
     ```
 
-13. Note that it's automatically provided the longitude and latitude attributes, awesome! We'll add one more:
+13. Note that it's automatically providing the longitude and latitude attributes, awesome! We'll add one more:
 
     ```rb
     Venue.create(name: "Melbourne Cricket Ground", address: "Melbourne Cricket Ground")
