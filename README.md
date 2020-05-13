@@ -10,6 +10,8 @@ into longitude and latitude coordinates which we can use to plot locations on a 
 
 ![](https://dl.dropboxusercontent.com/s/xyvtxhtn1tldqcj/geocode_example.png)
 
+You can find the code for [this project here](https://github.com/CoderAcademy-MEL/geocoder-app).
+
 ## Setup
 
 There are a a few things we need to setup.
@@ -29,10 +31,15 @@ There are a a few things we need to setup.
 3. We'll need a Google project and API key, this takes a few steps:
 
     a. Make a Google Developer account https://console.developers.google.com/
+
     b. Make a new project, it's the dropdown at the top left
+    
     c. Click on enable APIs
+    
     d. Enable the geocoding API
+    
     e. Go back to the homepage of the project and go to credentials, copy the API key
+    
     f. Save it in a text file or somewhere safe for now
 
 4. We're using the Google Maps geocoding API because it's **the best** but it does cost $, if you're signing up to a Google cloud account for the first time it should be free **BUT** once you're off the free plan you're charged $5 per 1000 requests  
