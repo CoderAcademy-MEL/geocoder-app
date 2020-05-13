@@ -1,0 +1,9 @@
+<h1>Venues Index</h1>
+<% @venues.each do |venue| %>
+  <h3>Name: <%= venue.name %></h3>
+  <h3>Address: <%= venue.address %></h3>
+  <hr>
+<% end %>
+
+<div style="height: 500px" id="map"></div>
+<%= javascript_pack_tag "leaflet/index" %>

@@ -1,0 +1,6 @@
+<h1>Venues Show</h1>
+<h3>Name: <%= @venue.name %></h3>
+<h3>Address: <%= @venue.address %></h3>
+
+<div style="height: 500px" id="map"></div>
+<%= javascript_pack_tag "leaflet/show" %>
