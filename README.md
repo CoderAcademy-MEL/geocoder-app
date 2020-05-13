@@ -6,7 +6,9 @@ This app is a walk through of the basics you can do with geocoding. Essentially 
 120 Spencer Street, Melbourne
 ```
 
-into longitude and latitude coordinates which we can use to plot locations on a map.
+into longitude and latitude coordinates which we can use to plot locations on a map like the below.
+
+![](https://dl.dropboxusercontent.com/s/xyvtxhtn1tldqcj/geocode_example.png)
 
 ## Setup
 
