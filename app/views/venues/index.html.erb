@@ -1,9 +1,23 @@
-<h1>Venues Index</h1>
-<% @venues.each do |venue| %>
-  <h3>Name: <%= venue.name %></h3>
-  <h3>Address: <%= venue.address %></h3>
-  <hr>
-<% end %>
+<h1>My Venues</h1>
 
-<div style="height: 500px" id="map"></div>
+<form id="search-form">
+  <input type="text" name="search" id="search">
+  <input type="submit" value="Search">
+</form>
+
+<div class="container">
+  <div class="venues">
+    <% @venues.each do |venue| %>
+      <div class="venue">
+        <h3>Name: <%= venue.name %></h3>
+        <h3>Address: <%= venue.address %></h3>
+      </div>
+    <% end %>
+  </div>
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+</div>
+
+
 <%= javascript_pack_tag "leaflet/index" %>
