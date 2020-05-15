@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+.venues {
+  width: 50%;
+}
+
+.venue {
+  border-bottom: 1px solid black;
+}
+
+.map-container {
+  height: 500px;
+  width: 50%;
+}
+
+#map {
+  height: 100%;
+}
