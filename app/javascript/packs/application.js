@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 import 'materialize-css/dist/css/materialize.min.css'
+import "leaflet/dist/leaflet.css"
 import 'materialize-css/dist/js/materialize.min.js'
 
 
