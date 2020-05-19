@@ -10,7 +10,7 @@ export const tileLayer = async (center) => {
       id: 'mapbox/streets-v11',
       tileSize: 512,
       zoomOffset: -1,
-      accessToken: "pk.eyJ1IjoiaGFycmlzb25tYWxvbmUiLCJhIjoiY2p5emI3aTFqMDRseDNobDNvZ3gyN2lvcSJ9.rBh0gbfM-m3E0ZWfRHuOYw"
+      accessToken: // add your token
   }).addTo(map)
   return map
 }
