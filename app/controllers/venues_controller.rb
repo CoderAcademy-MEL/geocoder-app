@@ -1,12 +1,13 @@
 class VenuesController < ApplicationController
   def index 
-    @venues = Venue.all
-    if params[:type] == "json"
-      data = @venues.map do |venue|
-        [venue.latitude, venue.longitude]
-      end 
-      render json: {data: data, center: [data[0][0], data[0][1]]}
-    end
+    @venues = Venue.includes(:information)    
+    # Venue.with_attached_image.all
+    # if params[:type] == "json"
+    #   data = @venues.map do |venue|
+    #     [venue.latitude, venue.longitude]
+    #   end 
+    #   render json: {data: data, center: [data[0][0], data[0][1]]}
+    # end
   end 
 
   def show

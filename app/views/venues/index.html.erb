@@ -5,12 +5,15 @@
   <input type="submit" value="Search">
 </form>
 
+<%= image_tag(asset_path("dog.jpg"), height: "300px") %>
+
 <div class="container">
   <div class="venues">
     <% @venues.each do |venue| %>
       <div class="venue">
         <h3>Name: <%= venue.name %></h3>
         <h3>Address: <%= venue.address %></h3>
+        <h4>Information: <%= venue.information.details %></h4>
       </div>
     <% end %>
   </div>

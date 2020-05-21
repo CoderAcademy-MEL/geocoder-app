@@ -17,6 +17,22 @@ venues = [
   }
 ]
 
-venues.each do |venue|
-  Venue.create(venue)
+information = [
+  {
+    details: "some details"
+  },
+  {
+    details: "some more details"
+  },
+  {
+    details: "some random details"
+  },
+  {
+    details: "some new details"
+  }
+]
+
+venues.each_with_index do |venue, index|
+  venue = Venue.create(venue)
+  venue.create_information(information[index])
 end
