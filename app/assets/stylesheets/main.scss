@@ -1,18 +1,17 @@
 .container {
-  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .venues {
-  width: 50%;
 }
 
 .venue {
-  border-bottom: 1px solid black;
+  margin-bottom: 30px;
 }
 
 .map-container {
   height: 500px;
-  width: 50%;
 }
 
 #map {

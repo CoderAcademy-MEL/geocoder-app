@@ -1,28 +1,22 @@
 <h1>My Venues</h1>
 
-<form id="search-form">
-  <input type="text" name="search" id="search">
-  <input type="submit" value="Search">
-</form>
 
-<%= image_tag(asset_path("dog.jpg"), height: "300px") %>
-
-<%= image_tag "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-RTQM4WQ_auM%2FUPahBjAZcCI%2FAAAAAAAAAGg%2Fw9NsVka8vC4%2Fs1600%2Fempty-box.jpg" %>
-
-<div class="container">
   <div class="venues">
     <% @venues.each do |venue| %>
       <div class="venue">
         <h3>Name: <%= venue.name %></h3>
         <h3>Address: <%= venue.address %></h3>
         <h4>Information: <%= venue.information.details %></h4>
+        <%= link_to "Show", venue_path(venue.id) %>
       </div>
     <% end %>
   </div>
+
+  <hr>
+  <h1>Map</h1>
   <div class="map-container">
     <div id="map"></div>
   </div>
-</div>
 
 
 <%= javascript_pack_tag "leaflet/index" %>
