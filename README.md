@@ -212,4 +212,4 @@ There are a a few things we need to setup.
 
     ```erb
     <%= stylesheet_pack_tag 'application' %>
-```
+    ```
