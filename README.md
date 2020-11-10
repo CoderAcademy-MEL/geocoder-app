@@ -199,3 +199,17 @@ There are a a few things we need to setup.
     ```
 
 20. You should now see a map!
+
+21. It should all now work locally but in production you'll need to make another couple of changes.
+
+a. Add this line of code to `/app/javascript/packs/application.js`
+
+```js
+import "leaflet/dist/leaflet.css"
+```
+
+b. In `/app/views/layouts/application.html.erb` add this to the head.
+
+```erb
+<%= stylesheet_pack_tag 'application' %>
+```
