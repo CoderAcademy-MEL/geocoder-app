@@ -202,14 +202,14 @@ There are a a few things we need to setup.
 
 21. It should all now work locally but in production you'll need to make another couple of changes.
 
-a. Add this line of code to `/app/javascript/packs/application.js`
+    a. Add this line of code to `/app/javascript/packs/application.js`
 
-```js
-import "leaflet/dist/leaflet.css"
-```
+    ```js
+    import "leaflet/dist/leaflet.css"
+    ```
 
-b. In `/app/views/layouts/application.html.erb` add this to the head.
+    b. In `/app/views/layouts/application.html.erb` add this to the head.
 
-```erb
-<%= stylesheet_pack_tag 'application' %>
+    ```erb
+    <%= stylesheet_pack_tag 'application' %>
 ```
